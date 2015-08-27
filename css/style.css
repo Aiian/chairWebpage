@@ -1,0 +1,658 @@
+/* CSS NECESSARY, DO NOT CHANGE */
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-regular-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont-webfont.woff') format('woff'),
+    url('../fonts/raleway-regular-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-regular-webfont-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-bold-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-bold-webfont-webfont.woff') format('woff'),
+    url('../fonts/raleway-bold-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-bold-webfont-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont-webfont.eot');
+    src: url('../fonts/raleway-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-light-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont-webfont.woff') format('woff'),
+    url('../fonts/raleway-light-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-light-webfont-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: content-box;
+
+}
+
+/* ----------------------------------------- */
+
+/* STYLING */
+
+/* General */
+
+body {
+    font-family: 'ralewayregular', 'sans-serif';
+    background-color: grey;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.colorTeal {
+    color: #23ba9c;
+}
+
+.bold {
+    font-family: ralewaybold, sans-serif;
+}
+
+.standardButton {
+    display: inline-block;
+    background-color: #23ba9c;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header */
+
+header {
+    background-color: black;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+header div {
+    display: block;
+    float: left;
+    padding: 14px 0;
+    margin: 0 0 0 60px;
+
+}
+
+header ul {
+    float: right;
+    height: 100%;
+    margin: 0 60px 0 0;
+}
+    li {
+        display: inline-block;
+        width: 120px;
+        height: 100%;
+        padding: 14px 0;
+        text-align: center;
+    }
+
+
+.dropdown {
+    width: 120px;
+    height: 32px;
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    right: 300px;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: none;
+}
+
+header div:nth-child(5) {
+    top: 87px;
+    right: 300px;
+}
+header div:nth-child(6) {
+    top: 116px;
+    right: 300px;
+}
+header div:nth-child(7) {
+    top: 43px;
+    right: 352px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid black;
+    background-color: transparent;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,221,225,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(219,221,225,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,221,225,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,221,225,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,221,225,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(219,221,225,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdde1', GradientType=0 );
+    position: relative;
+}
+
+    /* left < and right > selectors in jumbotron */
+.jumbotron > a.selectLeft {
+    position: absolute;
+    margin-top: 240px;
+    transform: translateY(-50%);
+    left: 0;
+    margin-left: 50px;
+}
+.jumbotron > a.selectRight {
+    position: absolute;
+    margin-top: 240px;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 50px;
+}
+.jumbotron > a:link {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    color: #23ba9c;
+}
+.jumbotron > a:visited {
+    color: #23ba9c;
+}
+    /* inne container for jumbotron content */
+.innerContainer {
+    width: 900px;
+    height: 350px;
+    padding: 100px 150px 50px 150px;
+}
+.largeImage {
+    background-image: url('../images/black_chair.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180%;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.largeTextHolder {
+    display: inline-block;
+    float: right;
+    width: 600px;
+    position: relative;
+}
+
+.largeTextHolder h1 {
+    font-size: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.largeTextHolder p {
+    padding: 0 130px;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.largeTextHolder a:link {
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    width: 260px;
+    height: 50px;
+    margin: 40px auto;
+    position: absolute;
+    left:0;
+    right:0;
+}
+
+/* MAIN */
+
+/* Gallery */
+
+#gallery {
+    background-color: white;
+    width: 1200px;
+}
+
+div.galleryImage {
+    width: 330px;
+    height: 230px;
+    top: 0;
+    float: left;
+}
+
+div.galleryImage:nth-child(1) {
+    background-image: url('../images/box1_img.jpg');
+    margin: 30px 30px 30px 74px;
+    position: relative;
+}
+
+div.galleryImage:nth-child(2) {
+    background-image: url('../images/box2_img.jpg');
+    margin: 30px 30px 30px 0;
+    position: relative;
+}
+
+#gallery div:nth-child(3){
+    width: 330px;
+    height: 260px;
+    float: left;
+    border: 1px solid lightgray;
+    margin: 29px 74px 60px 0;
+}
+
+.imageTag {
+    width: 330px;
+    height: 55px;
+    background-color: rgba(255,255,255,0.4);
+    position: absolute;
+    bottom: 15px;
+}
+
+.tag {
+    display: block;
+    width: 140px;
+    border-bottom: 5px solid #23ba9c;
+    padding: 0 0 3px 0;
+    margin: 10px 0 0 15px;
+    font-family: ralewaybold, sans-serif;
+}
+
+h3.tag {
+    margin-top: 35px;
+}
+
+#gallery div p {
+    margin: 10px 0 0 15px;
+    line-height: 1.5em;
+}
+
+/* Pricing */
+
+#pricing {
+    background-color: #f0f0f0;
+    width: 1200px;
+    height: 725px;
+}
+
+.largeTag {
+    display: block;
+    float: left;
+    width: 330px;
+    border-bottom: 5px solid #23ba9c;
+    padding: 0 0 6px 0;
+    margin: 40px 0 40px 74px;
+    text-transform: uppercase;
+    font-family: ralewaybold, sans-serif;
+    font-size: 24px;
+    color: grey;
+}
+
+/* PRICE PLAN */
+
+.pricePlanContainer {
+    width: 330px;
+    float: left;
+    top: 0;
+    border: 2px solid lightgray;
+    background-color: #f7f7f7;
+}
+
+#plan_1 {
+    margin: 30px 26px 30px 72px;
+    position: relative;
+}
+
+#plan_2 {
+    margin: 30px 26px 30px 0;
+    position: relative;
+}
+
+#plan_3 {
+    margin: 29px 72px 60px 0;
+    position: relative;
+}
+/* top circles above prive plans */
+
+            .topCircle {
+                display: inline-block;
+                position: absolute;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                border: 2px solid lightgray;
+                top: -40px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: white;
+            }
+            .innerCircle {
+                display: inline-block;
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: lightgray;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+/* ------------------------------- */
+
+/* price plan header */
+
+.pricePlanContainer h2 {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #23ba9c;
+    font-family: ralewaylight, sans-serif;
+    font-weight: bold;
+}
+
+/* price plan middle circle */
+
+.middleCircle {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    margin: 0 98px 35px 98px;
+    background-color: white;
+    font-family: ralewaybold, sans-serif;
+    color: lightgray;
+
+}
+
+.middleCircle p:first-child {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+    padding: 25px 0 0 0;
+}
+
+.indexTop {
+    vertical-align: super;
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+}
+
+.middleCircle p:nth-child(2) {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 0 0 0;
+}
+
+/* price plan service bars */
+
+.serviceBar {
+    width: 330px;
+    height: 45px;
+    background-color: grey;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    color: grey;
+}
+
+.serviceBar:nth-of-type(odd){
+    background-color: #e3e3e3;
+}
+
+.serviceBar:nth-of-type(even){
+    background-color: #f0f0f0;
+}
+
+.pricePlanContainer a:link {
+    width: 125px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px auto 0 auto;
+    position: absolute;
+    left:0;
+    right:0
+}
+
+.pricePlanContainer a:visited {
+    text-decoration: none;
+
+}
+
+/* specific price plans changes */
+
+/* plan 1 */
+
+#plan_1 div.serviceBar:nth-of-type(5){
+    background-color: #f7f7f7;
+}
+#plan_1 div.serviceBar:nth-of-type(6){
+    background-color: #f7f7f7;
+}
+
+/* plan 2 */
+
+#plan_2 {
+    background-color: #23ba9c;
+    border-color: #23ba9c;
+}
+
+#plan_2 .topCircle {
+    background-color: #23ba9c;
+    border-color: #23ba9c;
+}
+
+#plan_2 .innerCircle {
+    background-color: #f7f7f7;
+    border-color: #23ba9c;
+}
+
+#plan_2 h2 {
+    color: white;
+}
+
+#plan_2 .middleCircle {
+    color: #23ba9c    !important;
+}
+
+#plan_2 .serviceBar {
+    color: grey;
+}
+
+#plan_2 div.serviceBar:nth-of-type(3) {
+    background-color: white;
+}
+
+#plan_2 div.serviceBar:nth-of-type(5) {
+    background-color: white;
+}
+
+#plan_2 div.serviceBar:nth-of-type(6) {
+    background-color: #23ba9c;
+}
+
+#plan_2 a.standardButton:link {
+    background-color: white !important;
+    color: #23ba9c !important;
+}
+#plan_2 a.standardButton:visited {
+    background-color: white !important;
+    color: #23ba9c !important;
+}
+
+/* ------------------------------------------------ */
+
+/* Contact section */
+
+
+#contact {
+    width: 1200px;
+}
+
+/* left */
+
+input {
+    width: 635px;
+    height: 65px;
+    margin: 10px 0 10px 74px;
+    border: 1px solid #23ba9c;
+    color: grey;
+    font-size: 28px;
+    text-indent: 10px;
+    float: left;
+    font-family: 'mralewayregular', 'sans-serif';
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(180,180,180,0.7)
+}
+
+textarea {
+    width: 615px;
+    max-width: 615px;
+    min-height: 195px;
+    margin: 10px 0 10px 74px;
+    border: 1px solid #23ba9c;
+    color: grey;
+    font-size: 28px;
+    float: left;
+    padding: 10px;
+    font-family: 'mralewayregular', 'sans-serif';
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgba(180, 180, 180, 0.7)
+}
+
+/* right */
+
+.contactImage {
+    background-image: url('../images/red_chair.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 341px;
+    height: 180px;
+    margin: 0 74px;
+}
+
+.checkboxHolder {
+    width: 341px;
+    height: 50px;
+    display: inline-block;
+    margin: 40px 74px 0 74px;
+    position: relative;
+}
+
+.checkbox {
+    background-image: url('../images/form_ok.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #23ba9c;
+    padding: 2px;
+}
+
+#contact p {
+    display: inline-block;
+    width: 241px;
+    height: 54px;
+    margin: 0 0 0 75px;
+    position: absolute;
+    line-height: 27px;
+    color: grey;
+    text-align: justify;
+}
+
+#contact a:link {
+    width: 341px;
+    height: 60px;
+    margin: 40px 74px 0 74px;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    font-family: ralewaybold, sans-serif;
+}
+
+/* ----------------------------------------------- */
+
+/* footer */
+
+footer {
+    width: 1200px;
+    background-color: white;
+    padding-bottom: 60px;
+    color: lightgray;
+    padding-top: 30px;
+}
+
+footer p:first-of-type {
+    float: left;
+    margin: 10px 0 10px 60px;
+}
+
+footer p:last-of-type {
+    float: right;
+    margin: 10px 60px 10px 60px;
+}
+
+.socialLinkImage {
+    width: 35px;
+    height: 35px;
+    float: right;
+}
